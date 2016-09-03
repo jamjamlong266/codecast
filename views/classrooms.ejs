@@ -11,7 +11,7 @@
 <body>
   <div id="codekast-wrapper">
     <header>
-      <div id="ck-logo"><img src="/images/ck-logo.png" width="60"><p>CodeKast.io</p></div>
+      <div id="ck-logo"><img src="/images/ck-logo.png" width="60"></div>
       <div id="user-log"></div>
     </header>
 
@@ -50,7 +50,7 @@
 
           <div>
             <p class="room-creator">by <span class="creator-name"><%= user.username %></span></p>
-            <a href="/project" class="btn btn-primary" target="_blank">Join Room</a>
+            <a href="/classrooms/<%= room._id %>" class="btn btn-primary" target="_blank">Join Room</a>
           </div>
 
         </div>
