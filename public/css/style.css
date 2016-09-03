@@ -27,10 +27,11 @@ html, body {
 }
 
 #ck-logo {
-  padding:25px 0;
+  padding:10px;
+  margin-left: 50px;
 }
 
-#ck-logo img {}
+#ck-logo img {float:left;}
 
 #ck-logo p {
   color:white;
@@ -48,7 +49,6 @@ header {
   background:#2a3b41;
   position: relative;
   float:left;
-  text-align:center;
 }
 
 #user-log{
@@ -81,7 +81,6 @@ header {
   background:white;
   margin:25px auto;
   position:relative;
-  padding:15px 35px;
 }
 
 .ck-room {
@@ -383,11 +382,6 @@ width:;
   background:white;
   margin:25px auto;
   position:relative;
-
-}
-
-.header-banner {
-  padding:15px 35px;
 }
 
 #projects-list {
@@ -402,12 +396,13 @@ width:;
   height:90px;
   width:100%;
   border-bottom:1px solid rgba(151,151,151,.6);
-  padding:0px 20px;
-
+  padding:15px 20px;
+  display:table;
 }
 
 #projects-list li>span {
-
+  display:table-cell;
+  vertical-align:middle;
 }
 
 
@@ -420,17 +415,15 @@ width:;
 
 .project-icon {
   width:10%;
-  float:left;
 }
 .project-icon, .project-timeline, .project-name {
-    display: table;
-    table-layout: fixed;
+    /*display: table;
+    table-layout: fixed;*/
     padding:10px 0;
-    height:100%;
 }
 .project-icon span, .project-timeline span, .project-name span {
-  display:table-cell;
-  vertical-align:middle;
+  /*display:table-cell;
+  vertical-align:middle;*/
 }
 
 

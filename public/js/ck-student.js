@@ -53,9 +53,9 @@ $(function(){
 
   // Socket.io references
   // ===========================================================================
-  var socket = io.connect();
-  var socket = io('http://localhost:3000/classroom');
-  // var socket = io('http://codekast.io/classroom');
+  //var socket = io.connect();
+  // var socket = io('http://localhost:3000/classroom');
+  var socket = io('http://codekast.io/classroom');
 
   // connected to server
   socket.on('connected', function() {
