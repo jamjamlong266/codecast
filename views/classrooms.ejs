@@ -50,7 +50,7 @@
 
           <div>
             <p class="room-creator">by <span class="creator-name"><%= user.username %></span></p>
-            <a href="/project" class="btn btn-primary" target="_blank">Join Room</a>
+            <a href="/classrooms/<%= room.id %>" class="btn btn-primary" target="_blank">Join Room</a>
           </div>
 
         </div>
@@ -143,7 +143,7 @@
       data = { name: proj_name, desc: proj_desc };
       $.post('/classrooms', data, function(res) {
         console.log(res);
-        $('.ck-roomwrapper').append('<div class="ck-room col-md-3"><div class="newroom-wrap"><h1 class="room-title">' + res.name +'</h1><p class="room-des">'+ res.desc +'</p><p class="room-creator">by <span class="creator-name">' + username + '</span></p><a href="/project" class="btn btn-primary" target="_blank">Join Room</a></div></div>');
+        $('.ck-roomwrapper').append('<div class="ck-room col-md-3"><div class="newroom-wrap"><h1 class="room-title">' + res.name +'</h1><p class="room-des">'+ res.desc +'</p><p class="room-creator">by <span class="creator-name">' + username + '</span></p><a href="/classrooms/' + room.id + '" class="btn btn-primary" target="_blank">Join Room</a></div></div>');
       }).fail(function(res) {
         var jsonResponse = JSON.parse(res.responseText);
         swal({
