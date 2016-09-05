@@ -27,11 +27,11 @@ html, body {
 }
 
 #ck-logo {
+  width:100%;
   padding:10px;
-  margin-left: 50px;
 }
 
-#ck-logo img {float:left;}
+#ck-logo img {width:80px;height:80px;}
 
 #ck-logo p {
   color:white;
@@ -49,6 +49,7 @@ header {
   background:#2a3b41;
   position: relative;
   float:left;
+  text-align:center;
 }
 
 #user-log{
